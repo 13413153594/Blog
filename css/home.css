@@ -1,0 +1,529 @@
+
+body{
+    min-width: 1280px;
+}
+body.noScroll{
+    overflow: hidden;
+    height: 100%;
+}
+
+/*bg部分*/
+#bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#bg .bg{
+    width: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+#bg .bg1{
+    height: 1080px;
+    background-image: url("../img/bg1.jpg");
+}
+#bg .bg1 embed{
+    opacity: 0;
+}
+#bg .bg2{
+    height: 1080px;
+    background-image: url("../img/bg2.jpg");
+}
+#bg .bg3{
+    height: 534px;
+    background-image: url("../img/bg3.jpg");
+}
+
+/*wrap部分*/
+#wrap{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 1080px;
+}
+#wrap .wSwiper #logo{
+    opacity: 0;
+    position: relative;
+    left: -200px;
+    width: 150px;
+    height: 115px;
+    padding: 20px 0 0 30px;
+}
+#wrap .wSwiper #logo img{
+    float: left;
+}
+#wrap .wSwiper #logo .img2{
+    width: 90px;
+    height: 90px;
+    margin-left: 10px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+#wrap .wSwiper .swp2{
+    position: absolute;
+    top: 25px;
+    right: -200px;
+    opacity: 0;
+    width: 177px;
+    height: 45px;
+    margin-right: 30px;
+    background: url("../img/goindex.png");
+}
+#wrap .wSwiper .swp2 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.08);
+    border-radius: 20px;
+    transition: .3s;
+}
+#wrap .wSwiper .swp2 a:hover{
+    background: rgba(0,0,0,0);
+}
+#wrap .wSwiper .swp3{
+    position: absolute;
+    top: 470px;
+    right: 60px;
+    opacity: 0;
+    width: 340px;
+    height: 521px;
+    background: url("../img/swp3.png");
+}
+#wrap .wSwiper .swp4{
+    position: absolute;
+    top: 810px;
+    right: 135px;
+    opacity: 0;
+    width: 340px;
+    height: 160px;
+}
+#wrap .wSwiper .swp4 p{
+    color: #3d2672;
+     font-weight: bold;
+     font-size: 16px;
+ }
+#wrap .wSwiper .swp4 .qrcode{
+    float: left;
+    position: relative;
+    width: 130px;
+    height: 130px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.5) url("../img/qrcode.png") no-repeat center center/120px 120px ;
+}
+#wrap .wSwiper .swp4 .qrcode .line{
+    position: absolute;
+    top: 4px;
+    left: -7px;
+    width: 150px;
+    height: auto;
+    animation: goudan 4s linear infinite;
+}
+
+#wrap .wSwiper .swp4 .download{
+    float: right;
+    width: 205px;
+    height: 130px;
+}
+#wrap .wSwiper .swp4 .download a{
+    display: block;
+    margin-bottom: 3px;
+}
+#wrap .wSwiper .swp4 .download a.Android{
+    background: #000;
+}
+#wrap .wSwiper .swp4 .download a.Android img{
+    opacity: .88;
+    transition: .3s;
+}
+#wrap .wSwiper .swp4 .download a.Android img:hover{
+    opacity: 1;
+}
+
+#wrap .videoBtn{
+    position: absolute;
+    top: 452px;
+    right: 310px;
+    width: 165px;
+    height: 120px;
+    background: url("../img/videoBtn.png");
+    cursor: pointer;
+}
+#wrap .videoBtn img{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
+/*视频弹窗样式*/
+#wrap .video{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:99;
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+}
+#wrap #video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 800px;
+    height: 450px;
+    margin: auto;
+    border: 2px solid #b69476;
+}
+#wrap #video .close,#newinfo .content .close{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -40px;
+    width: 35px;
+    height: 35px;
+    background: url(../img/close.png) 0 0/100% 100%;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: .3s;
+}
+#wrap #video .close:hover,#newinfo .content .close:hover{
+    transform: rotate(180deg);
+}
+#wrap .mouse{
+    position: absolute;
+    left: 50%;
+    bottom: 220px;
+    opacity: 1;
+    width: 30px;
+    height: 70px;
+    margin-left: -15px;
+    background: url("../img/dBtn.png");
+    animation: goudan1 1.3s linear infinite;
+}
+
+/*newinfo部分*/
+#newinfo{
+    position: relative;
+    z-index:2;
+}
+#newinfo .main{
+    width: 1281px;
+    margin: 0 auto;
+}
+#newinfo .main .title{
+    position: relative;
+    top: 0;
+    opacity: 1;
+    height: 150px;
+    background: url("../img/newinfo/newinf.png") no-repeat center top;
+    transition: .5s;
+}
+#newinfo .main .title.hide{
+    top : 80px;
+    opacity: 0;
+}
+#newinfo .main .infoList ul{
+    overflow: hidden;
+}
+#newinfo .main .infoList ul li{
+    float: left;
+    position: relative;
+    top :0;
+    opacity: 1;
+    width: 418px;
+    height: 213px;
+    margin: 11px 4px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position-y: 17px;
+    transition: .5s;
+}
+#newinfo .main .infoList ul li.hide{
+    top : 80px;
+    opacity: 0;
+}
+#newinfo .main .infoList ul li:hover{
+    background-position-y: 0;
+}
+#newinfo .main .infoList ul li.l1{
+    background-image: url("../img/newinfo/p1.png");
+}
+#newinfo .main .infoList ul li.l2{
+    background-image: url("../img/newinfo/p2.png");
+}
+#newinfo .main .infoList ul li.l3{
+    background-image: url("../img/newinfo/p3.png");
+}
+#newinfo .main .infoList ul li.l4{
+    background-image: url("../img/newinfo/p4.png");
+}
+#newinfo .main .infoList ul li.l5{
+    background-image: url("../img/newinfo/p5.png");
+}
+#newinfo .main .infoList ul li.l6{
+    background-image: url("../img/newinfo/p6.png");
+}
+#newinfo .main .infoList ul li i{
+    position: absolute;
+    background: #a57c47;
+
+}
+#newinfo .main .infoList ul li .i1,#newinfo .main .infoList ul li .i3{
+    width: 0;
+    height: 2px;
+}
+#newinfo .main .infoList ul li .i2,#newinfo .main .infoList ul li .i4{
+    width: 2px;
+    height: 0;
+}
+
+#newinfo .main .infoList ul li .i1{
+    top: 9px;
+    left: 9px;
+}
+#newinfo .main .infoList ul li .i2{
+    top: 9px;
+    right: 9px;
+}
+#newinfo .main .infoList ul li .i3{
+    bottom: 24px;
+    right: 9px;
+}
+#newinfo .main .infoList ul li .i4{
+    bottom: 24px;
+    left: 9px;
+}
+#newinfo .main .infoList ul li:hover .i1{
+    animation: i1 .2s 0s linear 1 ;
+}
+#newinfo .main .infoList ul li:hover .i2{
+    animation: i2 .09s .2s linear 1 ;
+}
+#newinfo .main .infoList ul li:hover .i3{
+    animation: i1 .2s .29s linear 1 ;
+}
+#newinfo .main .infoList ul li:hover .i4{
+    animation: i2 .09s .49s linear 1 ;
+}
+#newinfo .main .infoList ul li:hover i{
+    animation-fill-mode:forwards !important;
+} /*停在最后一帧*/
+
+#newinfo .popwindow{
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+}
+
+#newinfo .popwindow .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 1180px;
+    height: 735px;
+    margin: auto;
+}
+#newinfo .popwindow .content ul li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: -50px 0 0 -70px;
+}
+#newinfo .content .close{
+    top: 69px;
+    right: 66px;
+}
+#newinfo .content .txt{
+    overflow: hidden;
+    position: relative;
+    width: 440px;
+    height: 315px;
+    margin: 210px 0 0 550px;
+    font-size: 16px;
+}
+#newinfo .content .txt .mainTxt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 410px;
+    line-height: 35px;
+}
+#newinfo .content .txt .boldRed{
+    font-weight: bold;
+    color: #e5402a;
+}
+#newinfo .content .txt .boldBlack{
+    font-weight: bold;
+    color: #000;
+}
+#newinfo .content .txt .mBottom{
+    margin-bottom:35px;
+}
+#newinfo .content .txt .normal{
+    color: #333;
+}
+#newinfo .content .txt .scroll{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 8px;
+    background: #e2e2e2;
+}
+#newinfo .content .txt:hover .scroll{
+    display: block;
+}
+#newinfo .content .txt .scroll .bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+}
+#newinfo .content .btn{
+    position: absolute;
+    top: 50%;
+    width: 46px;
+    height: 18px;
+    margin-top: -9px;
+    cursor: pointer;
+}
+
+#newinfo .content .btn.left{
+    left: 0;
+    background: url("../img/newinfo/toleft.png");
+}
+#newinfo .content .btn.right{
+    right: 0;
+    background: url("../img/newinfo/toright.png");
+}
+#newinfo .content .btn.left:hover{
+    animation: leftBtn 2s linear infinite;
+}
+#newinfo .content .btn.right:hover{
+    animation: rightBtn 2s linear infinite;
+}
+
+/*game*/
+#game{
+    position: relative;
+}
+#game .main{
+    position: relative;
+    width: 1130px;
+    height: 650px;
+    margin: 100px auto 0;
+}
+#game .main .title{
+    position: relative;
+    width: 800px;
+    height: 150px;
+    background: url("../img/game/game_title.png");
+    margin: 0 auto;
+}
+#game .pic{
+    position: relative;
+    width: 936px;
+    height: 439px;
+    margin: auto;
+    transform-style: preserve-3d;
+
+}
+#game .pic ul{
+    width: 774px;
+    height: 438px;
+    perspective: 800px;
+}
+#game .pic ul li{
+    position: absolute;
+    top: 0;
+    left: 80px;
+    width: 774px;
+    height: 438px;
+    background: #000;
+    transform:translate3D(0px,0px,-233px) rotateY(0deg) ;
+    transition:transform .5s;
+}
+#game .pic ul li img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+#game .pic ul li.mid img{
+    opacity: 1;
+}
+#game .pic ul li.left{
+    transform:translate3D(-196px,0px,-302px) rotateY(30deg);
+    z-index: 2;
+}
+#game .pic ul li.mid{
+    transform:translate3D(0,0,0px) rotateY(0deg);
+    z-index: 3;
+}
+#game .pic ul li.right{
+    transform:translate3D(196px,0px,-302px) rotateY(-30deg);
+    z-index: 1;
+}
+#game .btn p{
+    position: absolute;
+    top: 50%;
+    margin-top: -41px;
+    width: 42px;
+    height: 82px;
+    cursor: pointer;
+}
+#game .btn p.left{
+    left: 0;
+    background-image: url("../img/game/left.png");
+}
+#game .btn p.right{
+    right: 0;
+    background-image: url("../img/game/right.png");
+}
+/*动画*/
+    /*扫描二维码*/
+@keyframes goudan {
+    0%{ top: 4px;}
+    50%{ top: 120px;}
+    100%{ top: 4px;}
+}
+    /*鼠标向下小图标*/
+@keyframes goudan1 {
+    from { bottom: 220px; opacity: 1;}
+    to {bottom: 100px; opacity: 0;}
+}
+
+    /*i1 i3的动画*/
+@keyframes i1 {
+    from { width: 0;}
+    to {width: 400px;}
+}
+    /*i2 i4的动画*/
+@keyframes i2 {
+    from { height: 0;}
+    to {height: 180px;}
+}
+    /*newInfo弹窗层动画*/
+@keyframes leftBtn{
+    0% { left: 0}
+    50% { left: -15px;}
+    100% {  left: 0}
+}
+@keyframes rightBtn{
+    0% { right: 0}
+    50% { right: -15px;}
+    100% {  right: 0}
+}
