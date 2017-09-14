@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href=" ../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/change.css">
+    <link rel="stylesheet" href="../css/mobliedefault.css">
+    <link rel="stylesheet" href="../css/article.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="tf-menu" class="navbar-default navbar-fixed-top">
+    <div class="container text-center">
+        <div class="pull-left">
+            <h4>WL Blog</h4>
+        </div>
+
+        <div class="pull-left header">
+            <ul class="nav nav-pills list-unstyled">
+                <li><a href="../index.html">首页</a></li>
+                <li class="List"><a href="../HTML/note.html">前端 </a>
+                    <ul class="list-unstyled text-center content">
+                        <li><a href="../HTML/motion.html">前端自动化</a></li>
+                        <li><a href="../HTML/HTML+CSS.html">HTML+CSS</a></li>
+                        <li><a href="../HTML/JAVAScript.html">javascript</a></li>
+                        <li><a href="../HTML/Jquery.html">Jquery</a></li>
+                        <li><a href="../HTML/HTML5+CSS3.html">HTML5+CSS3</a></li>
+                        <li><a href="../HTML/Bootstrap.html">Bootstrap</a></li>
+                    </ul>
+                </li>
+                <li class="List"><a href="../HTML/notebook.html">笔记</a>
+                    <ul class="list-unstyled text-center content">
+                        <li><a href="../HTML/no_JS+JQ.html">JS+Jq</a></li>
+                        <li><a href="../HTML/no_HTML+CSS3.html">HTML5+CSS3</a></li>
+                        <li><a href="../HTML/no_Order.html">Order</a></li>
+                    </ul>
+                </li>
+                <li><a href="../HTML/Java.html">后台技术</a></li>
+                <li><a href="../HTML/chat.html">碎言碎语</a></li>
+                <li><a href="../HTML/chare.html">软件分享</a></li>
+                <li><a href="../HTML/Aboutme.html">关于我</a></li>
+                <li><a href="../HTML/Link.html">LINK</a></li>
+            </ul>
+        </div>
+        <div class="pull-right logo">
+            <ul class="list-unstyled nav nav-pills  ">
+                <li class="iconfont icon"><a> &#xe507;</a></li>
+                <li class="tu">
+                    <input class=" text text-left" placeholder="搜索">
+                    <button type="button" class="btn btn-default">搜索</button>
+                </li>
+                <li class="iconfont icon"><a href="">&#xe63b;</a>
+                    <img src="../images/wechat.png">
+                </li>
+                <li class="iconfont icon"><a href="https://github.com/">&#xe7dd;</a></li>
+                <li class="iconfont icon"><a href="">&#xe677;</a>
+                    <img src="../images/wechat.png">
+                </li>
+                <div class="pull-right position">
+                    <div class="navbar-toggle drown">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </div>
+                    <div class="pull-left header1 text-center">
+                        <ul class="nav  sec  list-unstyled">
+                            <li><a href="../index.html">首页</a></li>
+                            <li class="List"><a href="../HTML/note.html">前端 </a>
+                            </li>
+                            <li class="List"><a href="../HTML/notebook.html">笔记</a>
+                            </li>
+                            <li><a href="../HTML/Java.html">后台技术</a></li>
+                            <li><a href="../HTML/chat.html">碎言碎语</a></li>
+                            <li><a href="../HTML/chare.html">软件分享</a></li>
+                            <li><a href="../HTML/Aboutme.html">关于我</a></li>
+                            <li><a href="../HTML/Link.html">LINK</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </ul>
+        </div>
+
+    </div>
+
+
+</div>
+
+<div id="tf-content">
+    <div class="container">
+        <div class="left pull-left">
+            <h6>当前位置</h6>
+            <ol class="breadcrumb">
+                <li><a href="">首页</a></li>
+                <li><a href="">笔记</a></li>
+                <li><a href="">css3</a></li>
+                <li> 正文</li>
+            </ol>
+            <div class="left-header text-center">
+                <h3 class="text-center">
+                    CSS3 新增文本属性
+                </h3>
+                <strong>WL</strong><span>发布于</span>
+                <time>2016-12-25 01:54</time>
+                <span>分类</span><a href="">css3</a><span class="fa look">15</span><span class="see fa  ">1273</span>
+            </div>
+            <div class="content">
+                <h2>text-overflow</h2>
+                <pre class="text-left">
+      <i class="fa  fa-home home"> </i>定义文本溢出时所做的事，结合white-space、overflow属性一同使用，分别有3个值：
+      <i class="fa fa-fire fire"> </i>clip：超出时裁剪文本
+
+      <img src="../images/content1.png">
+
+      <i class="fa fa-fire fire"> </i> text-overflow-clip
+
+     <img src="../images/content2.png">
+
+      <i class="fa fa-fire fire"> </i> ellipsis：超出时显示省略号
+      <i class="fa fa-fire fire"> </i> text-overflow-ellipsis
+      <i class="fa fa-fire fire"> </i> inherit：
+      <i class="fa fa-fire fire"> </i>各浏览器兼容图
+
+ <img src="../images/content3.png">
+<br>
+
+         <h2>  word-break</h2>
+
+     <i class="fa  fa-home home"> </i>规定文本换行的规则，有3个值：
+     <i class="fa  fa-fire fire"> </i>normal：浏览器默认换行规则
+
+     <img src="../images/content1.png">
+
+     <i class="fa  fa-fire fire"> </i>word-break-normal
+     <i class="fa  fa-fire fire"> </i> break-all：允许在单词内换行，支持中文换行
+
+     <img src="../images/content1.png">
+
+     <i class="fa  fa-fire fire"> </i> word-break-break
+
+     <i class="fa  fa-fire fire"> </i>keep-all：只能在半角空格和连接字符换行
+     <i class="fa  fa-fire fire"> </i>word-break-keep
+
+     <img src="../images/content1.png">
+
+     <i class="fa  fa-fire fire"> </i>各浏览器兼容图
+
+
+     <i class="fa  fa-home home"> </i>word-wrap
+
+     <img src="../images/content1.png">
+
+     <i class="fa  fa-fire fire"> </i>允许将长单词或这url地址进行换行，2两个值：
+     <i class="fa  fa-fire fire"> </i>nolmal：浏览器默认规则
+     <i class="fa  fa-fire fire"> </i>word-break-normal
+     <i class="fa  fa-fire fire"> </i>强制换行文本
+     <i class="fa  fa-fire fire"> </i>word-wrap-break
+     <i class="fa  fa-fire fire"> </i>各浏览器兼容图
+
+<img src="../images/content3.png">
+
+                </pre>
+            </div>
+
+             <p class="like">
+                 <a class="fa ">赞<span class="count">22</span></a></p>
+            <p class="share">
+                分享到:
+                <a href="" class="fa fa-qq qq"></a>
+                <a href="" class="fa fa-weibo weibo"></a>
+                <a href="" class="fa fa-weixin weixin"></a>
+            </p>
+            <p class="tags text-center">
+                <strong class="fa fa-tags"></strong>
+           <a>css3新增文本属性</a>
+                <a>text-overflow</a>
+                <a>word-break</a>
+                <a>word-wrap</a>
+            </p>
+            <div class="author">
+                <img src="../images/houthor.png" width="60" height="60">
+                <h3>作者专栏:WL</h3>
+                <p>前端爱好者，热爱前端开发，喜欢结交朋友，如果觉得我第一印象不错，欢迎和我成为朋友。</p>
+                <p class="p_share"><a href="" >
+                    <i class="fa fa-qq"></i>QQ
+                </a>
+                    <a href="" >
+                        <i class="fa fa-weixin">微信</i>
+                    </a>
+                    <a href="" >
+                        <i class="fa fa-envelope-o">邮箱</i></a></p>
+            </div>
+             <form >
+                 <div class="remark">
+                     <textarea class="textbox" cols="45" rows="8" maxlength="65525" aria-required="true"  required="required"></textarea>
+                 </div>
+             <p><label>姓名<span>*</span></label>
+             <input class="txt" type="text" size="30" maxlength="245"><span class="tip">请输入姓名</span>
+             </p>
+                 <p><label>电子邮件<span>*</span></label>
+                     <input class="txt" type="text" size="30" maxlength="245"><span class="tip">请输入正确的格式</span>
+                 </p>
+                 <p>
+                     <label>请输入验证码</label>
+                     <input type="text" class="txt"> <span class="tip">请输入验证码</span>
+                     <div class="btn btn-info">发表评论</div>
+                 </p>
+             </form>
+              <div class="critic">
+           <!--  <div class="items">
+             <img src="../images/left1.jpg"><strong>error</strong>
+             <a>2017年5月22日 00:26</a>
+             <p class="pinglun">
+                  博主你好,我有问题想问你
+             </p>
+                  <p><input class="text" type="text" placeholder="我也想说一下"><button type="button" class="btn btn-info huifu">回复</button> </p>
+                 <div class="next">
+                     <img src="../images/left1.jpg"><strong>error</strong>
+                     <a>2017年5月22日 00:26</a>
+                 <p class="pinglun td">
+                     博主你好,我有问题想问你
+                 </p>
+                 </div>
+              </div>-->
+              </div>
+            <div class="button">
+                <a class=" pull-left">上一篇</a>
+                <a class=" pull-right">下一篇</a>
+            </div>
+        </div>
+        <div class="right ">
+            <h4>标签云</h4>
+            <div class="tagboard">
+                <h4 class="tui">标签云</h4>
+                <div class="label">
+                    <ul>
+                        <li><a href="">博客</a></li>
+                        <li><a href="">css3</a></li>
+                        <li><a href="">前端</a></li>
+                        <li><a href="">网站</a></li>
+                        <li><a href="">搜索引擎</a></li>
+                        <li><a href="">java</a></li>
+                        <li><a href="">后台开发</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="hot">
+                <h4>热门推荐</h4>
+                <ul class="little-menu list-unstyled">
+                    <li class="active">点击排行</li>
+                    <li>热门文章</li>
+                    <li>织梦后台</li>
+                </ul>
+                <p class="line"></p>
+                <div class="over">
+                    <div class="little-content">
+                        <ul class="list-unstyled list-content">
+                            <li><a href="">网站代码该如何优化？</a></li>
+
+                            <li><a href="">关于网站空间服务器的选择</a></li>
+                            <li><a href="">新手须知：域名该如何选择</a></li>
+                            <li><a href="">利用百度数据来做SEO优化系列（一）</a></li>
+                            <li><a href="">轻松教你如何查看网站日志</a></li>
+                        </ul>
+                        <ul class="list-unstyled list-content">
+                            <li><a href="">网站代码该如何优化？</a></li>
+                            <li><a href="">关于网站空间服务器的选择</a></li>
+                            <li><a href="">新手须知：域名该如何选择</a></li>
+                            <li><a href="">利用百度数据来做SEO优化系列（一）</a></li>
+                            <li><a href="">轻松教你如何查看网站日志</a></li>
+                        </ul>
+                        <ul class="list-unstyled list-content">
+                            <li><a href="">网站代码该如何优化？</a></li>
+                            <li><a href="">关于网站空间服务器的选择</a></li>
+                            <li><a href="">新手须知：域名该如何选择</a></li>
+                            <li><a href="">利用百度数据来做SEO优化系列（一）</a></li>
+                            <li><a href="">轻松教你如何查看网站日志</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="size">
+                    <li class="one">1</li>
+                    <li class="two">2</li>
+                    <li class="three">3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+            </div>
+            <div class="observer">
+                <h4>最新评论</h4>
+                <div class="order">
+                    <div><p class="name">瑰宝</p>
+                        <p class="leave">博客内容给的帮助很不错,现在基本都在用着这个,希望可以继续加油</p>
+                        <p class="data">2017.6.6</p></div>
+                    <div><p class="name">瑰宝</p>
+                        <p class="leave">博客非常不错很可以</p>
+                        <p class="data">2017.6.6</p></div>
+                    <div><p class="name">瑰宝</p>
+                        <p class="leave">博客非常不错很可以</p>
+                        <p class="data">2017.6.6</p></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="tf-friendly">
+    <div class="container">
+        <h4>友情链接</h4>
+
+        <a href="">破浪无忧博客</a>
+        <a href="">二次元博客</a>
+        <a href="">老牛の博客</a>
+        <a href="">吴佳博客</a>
+    </div>
+</div>
+<div id="tf-foot">
+</div>
+
+<script src="../js/jquery-2.2.0.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/change.js"></script>
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../markitup/skins/markitup/style.css" />
+    <link rel="stylesheet" type="text/css" href="../markitup/sets/default/style.css" />
+   <style>
+       *{margin: 0; padding: 0;}
+       li{list-style: none}
+       body,html{width: 100%; height: 100%;}
+     #warp{width: 100%;    }
+     #warp .warp_side{
+         position: relative;
+         margin: 100px auto;
+         border: 1px solid #FFFFFF;
+         width: 1100px;
+
+     }
+       #warp .warp_side .list{overflow: hidden; display: flex;}
+       #warp .warp_side .list li{float: left; padding: 10px; flex: 1; text-align: center; margin-left: 10px;
+           background-color: #F6F6F6; border-radius: 7px;
+       }
+       #warp .warp_side .list li.active{
+           background-color: black;
+           color: white;
+       }
+
+       #warp .warp_side .box {
+           overflow: hidden
+       }
+
+       #warp .warp_side .box .content {
+           position: absolute;
+           left: 0;
+           top: 50px;
+           width: 100%;
+           background-color: #FFFFFF;
+           display: none
+       }
+
+       #warp .warp_side .box .content .title {
+           font-size: 18px;
+       }
+
+       #warp .warp_side .box .content span.title {
+           float: left;
+           line-height: 40px;
+           margin-left: 10px;
+       }
+
+       #warp .warp_side .box .content .text {
+           border: 1px solid #00ccff;
+           margin-left: 10px;
+           padding: 10px 10px 10px 30px;
+           border-radius: 7px;
+           max-width: 300px;
+           width: 560px;
+           height: 20px;
+
+       }
+
+       #warp .warp_side .box .content .actire {
+           color: #6d6d6d;
+           font-size: 14px;
+           display: block;
+           padding: 15px 10px 13px 20px;
+       }
+       #warp #html,textarea{width: 96%; resize: none;}
+       .txbox{
+           height: 200px;font-size: 18px;
+       }
+       .markItUp{width: 100%;}
+       .markItUpEditor{background-image: none; border:none}
+       input.tags {
+           width: 70%;
+           padding: 10px;
+           border-radius: 7px;
+           border: 1px solid #1a5dc1;
+       }
+       #warp .warp_side .box .content .tags{float: left; }
+
+       #warp .warp_side .box .content .tag {
+           font-size: 12px;
+       }
+
+       #warp .warp_side .box .content .classfiy {
+           text-align: left;
+           margin: 22px 0 13px 0;
+       }
+
+       #warp .warp_side .box .content .classfiy span {
+           color: #00A0EA;
+           cursor: pointer;
+           padding: 10px;
+
+       }
+
+       #warp .warp_side .box .content .classfiy-select {
+           display: block;     padding: 10px;
+           margin: 48px 0 0 0;
+       }
+       #warp .warp_side .box .content .f2 .btn{border-radius: 7px; padding: 10px; border: none; margin-left: 10px; background-color: #00A0EA; text-align: center; color: white}
+      #warp  .warp_side .box .content .publish{    width: auto;
+          height: 30px;
+          padding: 0 15px;
+          border: none;
+          margin: 0 auto;
+          display: block;
+          color: #fff;
+          font: bold 12px/30px Arial, Helvetica, sans-serif;
+          text-align: center;
+          cursor: pointer;
+         background-color: #185FA7;
+      }
+
+       #warp  .warp_side .box .content .table{
+           width: 100%;
+           padding-left: 6px;
+           font-size: 14px;
+           font-weight: 100;
+           text-align: left;
+           text-align: center;
+       }
+       #warp  .warp_side .box .content .table td{
+           text-align: center;
+       }
+
+       #warp  .warp_side .box .content .table tr:hover{
+           background-color: #F9FAD1!important;
+       }
+       #warp  .warp_side .box .content .table tr:nth-child(2n)
+       {
+           background-color: #f9f9f9;
+
+           border-top: solid 1px #eee;
+       }
+       #warp  .warp_side .box .content .table td{
+
+           padding: 12px 2px;
+
+       }
+       #warp  .warp_side .box .content .table .tdleft {
+           text-align: left;
+           padding-left: 6px;
+       }
+       #warp .page{text-align: center; margin: 30px auto}
+       #warp .page a{color: #00b3ee; cursor: pointer;}
+   </style>
+</head>
+<body>
+    <div id="warp">
+          <div class="warp_side">
+        <ul class="list">
+            <li class="active" >发表文章</li>
+            <li  >文章管理</li>
+            <li>类别管理</li>
+            <li>评论管理</li>
+        </ul>
+              <div class="box">
+                  <div class="content" style="display: block ">
+                      <span class="title">文章标题:</span><input type="text" class="text" placeholder="请写入标题">
+                      <p class="actire">文章内容</p>
+                      <div class="textbox">
+                        <textarea id="html" cols="80" rows="20" >
+                    </textarea>
+                      </div>
+                      <fieldset style="margin-top: 10px; padding: 4px 10px 10px 10px;">
+                          <legend>上传图片</legend>
+                          <input type="file" id="file1" style=" width: 300px ;float: left  ; margin: 17px 0 0 0">
+                          <input type="button" value="上传"   style="margin: 0 0 0 30px ;float: right;  padding: 20px; border: none;" >
+                      </fieldset>
+
+
+
+                      <p class=" actire ">文章标签（添加Tag，你的内容能被更多人看到）</p>
+                      <input type="text" class="tags"><span class="actire tag">（最多添加5个标签，多个标签之间用“,”分隔）</span>
+                     <h5 class="classfiy">个人分类<span>[分类编辑]</span></h5>
+                      <input type="text" class="tags val">
+                      <p class="classfiy-select">
+                      <form class="f1">
+                      <input type="checkbox" class="classfiy-tags" name="select" value="javascript">&nbsp; javascript&nbsp;&nbsp; <input class="classfiy-tags" name="select" type="checkbox" value="HTML5"> &nbsp;HTML5 &nbsp;&nbsp;
+                      <input class="classfiy-tags" name="select" type="checkbox" value="Jquery">&nbsp; Jquery&nbsp;&nbsp;
+                  </form>
+                      </p>
+                      <h5 class=" classfiy  ">文章分类（到分类首页） <span>[分类编辑]</span></h5>
+                      <form>
+                          <input type="radio" class="classfiy-tags" name="select" value="javascript">&nbsp; javascript&nbsp;&nbsp; <input class="classfiy-tags" name="select" type="radio" value="HTML5"> &nbsp;HTML5 &nbsp;&nbsp;
+                          <input class="" name="select" type="radio" value="Jquery">&nbsp; Jquery&nbsp;&nbsp;
+                      </form>
+                      <p class=" actire ">更多文章（添加关联的文章url）</p>
+                       <form class="f2">
+                           <input type="text" class="tags link"><input class="btn" type="button" value="添加">
+                           <div class="tags-link">
+
+                           </div>
+                       </form>
+                      <p class=" actire ">摘要：（默认自动提取您文章的前200字显示在博客首页作为文章摘要，您也可以在这里自行编辑 ）</p>
+                      <textarea  class="txbox"></textarea>
+                  <button class="publish" type="button" value="发表">发表</button>
+                  </div>
+
+
+                  <div class="content">
+                   <table class="table">
+                       <tr>
+                           <th class="tdleft">标题</th>
+                           <th width="50px">阅读数</th>
+                           <th width="50px">评论数</th>
+                           <th width="170px">操作</th>
+                       </tr>
+                       <tr>
+                           <td class="tdleft"><a>JavaScript Removeclass addClass 简单封装（2017-04-12 23:29)</a></td>
+                           <td>12</td>
+                           <td>0</td>
+                           <td>
+                               <a>编辑</a>|<a>删除</a>|<a>分类</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td class="tdleft"><a>JavaScript Removeclass addClass 简单封装（2017-04-12 23:29)</a></td>
+                           <td>12</td>
+                           <td>0</td>
+                           <td>
+                               <a>编辑</a>|<a>删除</a>|<a>分类</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td class="tdleft"><a>JavaScript Removeclass addClass 简单封装（2017-04-12 23:29)</a></td>
+                           <td>12</td>
+                           <td>0</td>
+                           <td>
+                               <a>编辑</a>|<a>删除</a>|<a>分类</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td class="tdleft"><a>JavaScript Removeclass addClass 简单封装（2017-04-12 23:29)</a></td>
+                           <td>12</td>
+                           <td>0</td>
+                           <td>
+                               <a>编辑</a>|<a>删除</a>|<a>分类</a>
+                           </td>
+                       </tr>
+                   </table>
+                      <div class="page">
+                          <a>首页</a>
+                          <a>上一页</a>
+                          <a>下一页</a>
+
+                          <a>末页</a>
+                      </div>
+
+                  </div>
+                  <div class="content">
+                      <table class="table">
+                          <tr>
+                              <th class="tdleft">类别</th>
+                              <th width="50px">文章</th>
+                              <th width="100px">操作</th>
+                              <th width="170px">排序</th>
+                          </tr>
+                          <tr>
+                              <td class="tdleft">JAVAScript</td>
+                              <td >4</td>
+                              <td><a>编辑</a>|<a>删除</a></td>
+                              <td></td>
+                          </tr>
+                          <tr>
+                              <td class="tdleft">HTML5</td>
+                              <td >20</td>
+                              <td><a>编辑</a>|<a>删除</a></td>
+                              <td></td>
+                          </tr>
+                          <tr>
+                              <td class="tdleft">Jquery</td>
+                              <td >5</td>
+                              <td><a>编辑</a>|<a>删除</a></td>
+                              <td></td>
+                          </tr>
+                      </table>
+
+
+
+                  </div>
+                  <div class="content">
+                      <div class="comment">
+                          <h6 class="actire">我文章的评论</h6>
+                          <table class="table">
+                              <tr>
+                                  <th class="tdleft">标题</th>
+                                  <th width="50px">名称</th>
+                                  <th width="300px">留言</th>
+                                  <th width="170px">时间</th>
+                                  <th width="170px">操作</th>
+                              </tr>
+                              <tr>
+                                  <td class="tdleft">JavaScript Removeclass addClass 简单封装</td>
+                                  <td >xx</td>
+                                  <td>现在已经是程序员的你，或者已经在准备成为程序员的路上，你对学弟学妹们有什么样的建议呢？怎样看待自己的程序员生涯选择？如何看程序员这个职业呢？</td>
+                                  <td> 2017-06-08 19:25</td>
+                                  <td> <a>删除</a></td>
+                              </tr>
+
+
+                              </table>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+    </div>
+   <script src="../js/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="../markitup/jquery.markitup.js"></script>
+    <script type="text/javascript" src="../markitup/sets/default/set.js"></script>
+
+  <script>
+   var $List=$(".list li");
+   var $content=$(".box .content");
+    $List.click(function () {
+      var index=  $(this).index();
+      $(this).addClass("active").siblings().removeClass("active");
+        $content.eq(index).show().siblings().hide();
+    });
+   var arr=[];
+   $(document).ready(function()	{ $('#html').markItUp(mySettings); });
+
+   //分类
+  var select=document.querySelectorAll(".f1 .classfiy-tags");
+  var length=select.length;
+  var val=document.querySelector(".val") ;
+
+       for(var i=0; i<length; i++)
+       {
+           select[i].index=i;
+           select[i].onclick=function () {
+                  if (select[this.index].checked) {
+
+                      arr.push(this.value);
+                      val.value = arr;
+                  }
+                  }
+
+       }
+   //链接
+
+
+   var add=document.querySelectorAll(".btn")[0];
+      var tags_link=document.querySelector(".tags-link")
+      add.onclick=function () {
+          var link=document.querySelector(".link").value;
+        var d=  document.createElement("p");
+          d.className="actire";
+          d.innerHTML+=link;
+
+          tags_link.appendChild(d)
+      }
+
+
+  </script>
+</body>
+</html>
