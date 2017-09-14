@@ -1,0 +1,159 @@
+@media screen     and (max-width: 992px) { /*小于*/
+    #tf-menu.navbar-default .header {
+        display: none;
+    }
+    #tf-content  .right>h4{
+        display: none;
+    }
+    #tf-content  .right .tui{
+        display: block;
+    }
+    #tf-menu.navbar-default .logo .drown {
+          display: block !important;
+      }
+
+    #tf-menu.navbar-default .logo > ul > li > a {
+        font-size: 22px;
+    }
+    #tf-content .left{
+        width: 100%;
+    }
+    #tf-content .observer {
+        display: none;
+    }
+
+    #tf-content  .right{
+        width: 100%;
+    }
+    #tf-content  .right .hot{
+        width: 43%;
+        float: left;
+    }
+
+    #tf-content  .right .tagboard{
+        width: 44%;
+        float: right;
+        margin-left: 10px;
+        overflow: hidden;
+    }
+    #tf-content  .right .hot  .size{
+        top: 100px;
+    }
+    #tf-content  .right  .hot .line{
+        top: 97px;
+    }
+    #tf-content  .right{
+        padding: 0 3px 18px 6px;
+    }
+    #tf-content  .right .hot .little-content .list-content li{
+        padding: 11px 9px 9px 42px;
+    }
+    #tf-about .List ul{
+        display: initial;
+    }
+    #tf-about .List  ul >li{
+        flex: 0;
+    }
+    #tf-about .List  ul >li  {
+        font-size: 15px;
+        padding: 0;
+        float: left;
+    }
+    #tf-about .List  ul >li i{
+        font-size: 45px;
+    }
+
+    #tf-about .List{
+        width: 121%;    margin-left: -55%;
+    }
+
+}
+
+@media screen     and (max-width: 768px) {  /*小于*/
+
+
+
+
+
+    #tf-menu.navbar-default .logo .icon {
+        display: none;
+        opacity: 0;
+    }
+    #tf-content .left .ites img{
+        float: none;
+        width: 100%;;
+        height: 100%;
+    }
+    #tf-content .left .ites{
+        text-align: center;
+    }
+
+
+    #tf-menu.navbar-default .header1 {
+
+        right: -59%;
+        margin-left: -336px;
+        text-align: center;
+    }
+    #tf-menu.navbar-default .container .header-img img{
+        display: none;
+    }
+
+    #tf-menu.navbar-default .header1 a {
+        text-align: center;
+    }
+
+    #tf-content .left  .itse  .Web,#tf-content .left .itse .java{
+        float: none;
+        margin: 10px 0 10px 0;
+    }
+    #tf-content  .right .hot{
+        width: 100%;
+        float: none;
+    }
+    #tf-content  .right .tagboard{
+       width: 100%;
+       float: none;
+       margin-left: 0px;
+    }
+    #tf-content  .right .hot{
+        max-width:310px;
+        float: none;
+        margin: 30px auto;
+    }
+
+    #tf-about .List{
+        max-width: 444px;
+        min-width: 444px;
+
+        margin-left: -207px;
+    }
+}
+
+
+
+
+
+
+@media screen     and (min-width: 992px) { /*大于*/
+    #tf-menu.navbar-default .header1 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+}
+
+
+
+
+
+/*
+@media screen and (min-width: 780px) and (max-width: 992px)*/

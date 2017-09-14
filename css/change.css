@@ -1,0 +1,743 @@
+/*---------------------------nav-----------------------*/
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font_n23h8450j0olmcxr/iconfont.eot');
+    src: url('../font_n23h8450j0olmcxr/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../font_n23h8450j0olmcxr/iconfont.woff') format('woff'),
+    url('../font_n23h8450j0olmcxr/iconfont.ttf') format('truetype'),
+    url('../font_n23h8450j0olmcxr/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: "Consolas", Microsoft Yahei !important;
+}
+
+#tf-menu.navbar-default {
+    color: white;
+    background-color: black;
+!important;
+    padding: 20px 0 20px 0;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+#tf-menu.navbar-default .container {
+    position: relative;;
+}
+
+#tf-menu.navbar-default .container .header-img {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    margin-left: -160px;
+    margin-top: -170px;
+    display: none;
+    z-index: -1;
+}
+
+#tf-menu.navbar-default .container .header-img img {
+    width: 300px;
+    height: 300px;
+}
+
+#tf-menu.navbar-default ul li > a {
+    color: white;
+    transition: 0.5s;
+}
+
+#tf-menu.navbar-default .header > ul {
+    padding-left: 50px;
+}
+
+#tf-menu.navbar-default .header ul li > a {
+    border-radius: 0;
+    font-size: 15px;
+    cursor: pointer;
+    color: #e2e2e2;
+}
+
+#tf-menu.navbar-default .header ul li > a:hover {
+    color: #000000;;
+}
+
+#tf-menu.navbar-default .header ul li {
+    position: relative;
+
+}
+
+#tf-menu.navbar-default .header ul li > .content {
+    position: absolute;;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .5);
+    text-align: center;
+    padding: 15px;
+    top: 50px;
+    border-radius: 2px;
+    left: -20px;
+    display: none;
+}
+
+#tf-menu.navbar-default .header ul li > .content li:hover a {
+    color: #00FFFF;
+
+}
+
+#tf-menu.navbar-default .header ul li > .content li {
+    padding-top: 10px;
+    transition: 0.5s;
+
+}
+
+#tf-menu.navbar-default .header ul li > .content li:hover {
+
+}
+
+#tf-menu.navbar-default .header ul li > .content a {
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+
+}
+
+#tf-menu.navbar-default h4 {
+    font-weight: 800;
+    font-size: 21px;
+    padding-right: 10px;
+}
+
+#tf-menu.navbar-default .logo ul li > a {
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: rgba(78, 82, 84, .4);;
+}
+
+#tf-menu.navbar-default .logo > ul > li img {
+    position: absolute;
+    left: -48px;
+    top: 51px;
+    width: 191px;
+    height: 171px;
+    transform-origin: top;
+    transform: scale(0);
+
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+    transition: 0.7s;
+
+}
+
+#tf-menu.navbar-default .logo > ul > li {
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -ms-transition: .7s;
+    -o-transition: .7s;
+    transition: .7s;
+}
+
+#tf-menu.navbar-default .logo > ul > li:hover img {
+    transform: scale(1);
+}
+
+#tf-menu.navbar-default .logo ul li > a:hover {
+    background-color: transparent;
+
+}
+
+#tf-menu.navbar-default .position {
+    position: relative;
+
+}
+
+#tf-menu.navbar-default .logo ul .drown {
+    padding: 17px 12px 16px 10px;
+    margin: 2px 0 0 5px;
+    transition: 0.5s;
+    background-color: rgba(78, 82, 84, .4);;
+}
+
+#tf-menu.navbar-default .logo ul .drown:hover {
+    background-color: transparent;
+}
+
+#tf-menu.navbar-default .logo ul li {
+    position: relative;
+}
+
+#tf-menu.navbar-default .logo .text {
+    height: 34px;
+    padding: 21px 9px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#tf-menu.navbar-default .logo ul li.tu {
+    display: none;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+
+}
+
+#tf-menu.navbar-default .logo ul li.tu .btn {
+    padding: 11px 14px;
+}
+
+#tf-menu.navbar-default .logo .drown {
+    cursor: pointer;
+}
+
+#tf-menu.navbar-default .header1 {
+
+    transition: 0.5s;
+    transition-property: width;
+    display: none;
+
+    background-color: rgba(27, 28, 29, 0.5);;
+    position: absolute;
+    right: -30px;
+    top: 50px;
+}
+
+#tf-menu.navbar-default .header1 > ul li a {
+    font-size: 15px;
+    padding: 15px;
+}
+
+#tf-menu.navbar-default .header1 > ul li:hover a {
+    animation: move 1.5s linear;
+}
+
+#tf-menu.navbar-default .header1 > ul {
+    min-width: 107px;
+}
+
+#tf-menu.navbar-default .header1 > ul li {
+
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0px);
+    }
+    25% {
+        transform: translateX(10px);
+    }
+    50% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/*----------------------------nav--------------------------*/
+
+#tf-content {
+    font-family: "Consolas", Microsoft Yahei;
+    background-color: #f1f1f1;
+    padding-top: 35px;
+    overflow: hidden;
+}
+
+#tf-content .thumbnail {
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.7s;
+}
+
+#tf-content .col-xs-12 img {
+    padding: 5px;
+    display: block;
+    margin: 0 auto;
+    width: 100%;;
+}
+
+#tf-content h2 {
+
+    font-size: 30px;
+    border-bottom: 3px #000 solid;
+    display: inline-block;
+}
+
+#tf-content h4 {
+    font-size: 18px;
+    font-weight: 800;
+    padding: 4px;
+}
+
+#tf-content .thumbnail .font {
+    font-size: 14px;
+    padding: 20px;
+
+}
+
+#tf-content .thumbnail:hover {
+    transform: translateY(10px)
+}
+
+#tf-content .thumbnail > a {
+    text-decoration: none;
+    cursor: pointer;
+    text-align: right;
+    padding-right: 10px;
+    display: block;
+}
+
+#tf-content .thumbnail .font a {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #000;
+    transition: .7s;
+    font-weight: 800;
+}
+
+#tf-content .thumbnail .font a:hover {
+    color: #00b3ee;
+}
+
+#tf-content .row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+#tf-content #spreak {
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+#tf-content .content-logo {
+    display: inline-block;
+}
+
+#tf-content .f1 {
+    float: left;
+    display: inline-block;
+}
+
+#tf-content .left-content {
+    float: right;
+    display: block;
+}
+
+#tf-content .left > h4 {
+    border-left: 2px solid #3472EF;
+    padding: 10px;
+}
+
+#tf-content .left .ites, #tf-content .right .tagboard, #tf-content .right .hot {
+    border-radius: 5px;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -ms-transition: .7s;
+    -o-transition: .7s;
+    transition: .7s;
+}
+
+#tf-content .left .ites {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0 20px 0;
+    overflow: hidden;
+
+}
+
+#tf-content .left .ites:hover, .ites, #tf-content .right .tagboard:hover, #tf-content .right .hot:hover {
+    box-shadow: 0 0 10px #ccc;
+}
+
+#tf-content .left .ites img {
+    float: left;
+}
+
+#tf-content .left {
+    overflow: hidden;
+    width: 68%;
+}
+
+#tf-content .left .ites .ites-header {
+
+}
+
+#tf-content .left .ites .ites-header h4 a {
+    text-decoration: none;
+    color: black;
+    padding-left: 20px;
+}
+
+#tf-content .left .ites .ites-header .info {
+    overflow: hidden;;
+    padding: 10px;
+    height: 90px;
+
+}
+
+#tf-content .left .itse {
+    padding: 5px;
+
+}
+
+#tf-content .right h4 {
+    border-left: 2px solid #3472EF;
+    padding: 10px;
+}
+
+#tf-content .left .itse .Web > h4 {
+    border-left: 2px solid #3472EF;
+    padding: 10px;
+}
+
+#tf-content .left .itse .Web {
+    padding: 15px 45px 15px 15px;
+    margin: 0px 0 30px 0;
+    background-color: white;
+    float: left;;
+}
+
+#tf-content .left .itse .Web ul {
+    overflow: hidden;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -ms-transition: .7s;
+    -o-transition: .7s;
+    transition: .7s;;
+
+}
+
+#tf-content .left .itse .Web ul li span {
+    padding: 5px;
+    border-radius: 3px;
+    color: white;;
+    background-color: #bbbbb8;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#tf-content .left .itse .Web ul li span.one {
+    background-color: #ef8261;
+}
+
+#tf-content .left .itse .Web ul li span.two {
+    background-color: #3299cd;
+}
+
+#tf-content .left .itse .Web ul li span.three {
+    background-color: #8e93ce;
+}
+
+#tf-content .left .itse .Web ul li {
+    margin: 5px 0 5px 0;
+
+    padding: 5px 30px 10px 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+#tf-content .left .itse li:hover {
+    transform: translateX(10px);
+}
+
+#tf-content .left .itse .Web ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 5px;
+    color: #545151;
+}
+
+#tf-content .left .itse .java {
+    float: right;
+
+}
+
+#tf-content .left .ites span {
+    text-align: right;
+    display: block;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -ms-transition: .7s;
+    -o-transition: .7s;
+    transition: .7s;
+}
+
+#tf-content .left .skip {
+    padding: 5px;
+    text-align: center;
+}
+
+#tf-content .left .skip a {
+    padding: 10px;
+    background-color: #5FCFED;
+    text-decoration: none;
+    color: black;
+}
+
+#tf-content .left .ites span a {
+    padding: 10px;
+    background-color: #b3dcdc;
+    border-radius: 2px;
+    color: white;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -ms-transition: .7s;
+    -o-transition: .7s;
+    transition: .7s;
+
+}
+
+#tf-content .left .ites span:hover a {
+    color: #1b1c1d;
+    background-color: orange;
+}
+
+#tf-content .right {
+    width: 300px;
+    padding: 0 20px 20px 20px;
+    display: inline-block;
+}
+
+#tf-content .right .hot {
+    padding: 5px;
+    margin-top: 21px;
+    background-color: white;;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#tf-content .right .hot .little-menu {
+    overflow: hidden;;
+    display: flex;
+}
+
+#tf-content .right .hot .line {
+    width: 77px;
+    background-color: #00b3ee;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 95px;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -ms-transition: .7s;
+    -o-transition: .7s;
+    transition: .7s;
+}
+
+#tf-content .right .hot .little-menu li {
+    float: left;
+    padding: 5px;
+    cursor: pointer;
+    flex: 1;
+    color: black;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+    transition: 0.7s;
+}
+
+#tf-content .right .hot .little-menu li.active {
+    color: #00b3ee;
+}
+
+#tf-content li {
+    transition: .7s;
+
+}
+
+#tf-content .right .hot .little-content {
+    overflow: hidden;;
+    width: 1000%;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -ms-transition: .7s;
+    -o-transition: .7s;
+    transition: .7s;
+
+}
+
+#tf-content .right .hot .little-content .list-content {
+    margin-left: 20px;
+    float: left;
+}
+
+#tf-content .right .hot .little-content .list-content li {
+    transition: .7s;
+    padding: 11px 9px 9px 13px;
+    font-size: 13px;
+}
+
+#tf-content .right .hot .little-content .list-content li:hover {
+    transform: translate(10px);
+}
+
+a:hover {
+    text-decoration: none
+}
+
+#tf-content .right .hot .size {
+    overflow: hidden;
+    position: absolute;
+    left: -30px;
+    top: 98px;
+    z-index: 999;
+    background: white;
+}
+
+#tf-content .right .hot .size li {
+    background-color: #BBBBB8;
+    color: white;
+    border-radius: 2px;
+    padding: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+li {
+    list-style: none
+}
+
+#tf-content .right .hot .size li.one {
+    background-color: #ef8261;
+}
+
+#tf-content .right .hot .size li.two {
+    background-color: #3299cd;
+}
+
+#tf-content .right .hot .size li.three {
+    background-color: #8e93ce;
+}
+
+#tf-content .observer {
+    padding: 5px;
+    background-color: white;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+#tf-content .observer p {
+
+}
+
+#tf-content .observer .data {
+    text-align: right;
+}
+
+#tf-content .observer div {
+
+    border-top: 1px dashed #BBBBB8;
+}
+
+#tf-content .right .tagboard {
+    padding: 5px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+#tf-content .right .tagboard ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#tf-content .right .tagboard ul li {
+    float: left;
+    padding: 10px;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -ms-transition: .7s;
+    -o-transition: .7s;
+    transition: .7s;
+    font-size: 15px;
+    background-color: #FAFAFA;
+    border-radius: 7px;
+    margin: 3px;
+}
+
+#tf-content .right .tagboard ul li a {
+    color: #666666;
+}
+
+#tf-content .right .tagboard ul li:hover {
+    background-color: #aabdff
+}
+
+/*-----------------#tf-friendly-----------------*/
+
+
+#tf-friendly{
+    padding: 20px 0;
+    background-color: #f1f1f1;overflow: hidden;
+}
+
+
+#tf-friendly a{
+
+    display: inline-block;
+    transition: transform .5s;
+    width: calc(100% / 5 - -31px);
+    margin: 0 5px 10px;
+    padding: 10px 0;
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    background: #fff;
+    color: #000;
+    white-space: nowrap;
+    text-align: center;
+}
+#tf-friendly a:hover {
+    transform: scale(.9);
+    border: 1px solid transparent;
+    background: #5fcfed;
+    color: #fff;
+}
+
+
+/*----------------tf-foot-----------------------*/
+
+#tf-foot{
+    padding: 20px;
+    background-color: black;
+}
+
+
+/*----------------------tf-friendly--------------*/
+#tf-foot{
+    padding: 20px;
+    background-color: black;
+}
